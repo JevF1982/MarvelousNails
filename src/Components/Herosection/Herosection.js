@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styled from "styled-components";
 
 function Herosection() {
+  const pics = [
+    "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+  ];
+
   const Wrapper = styled.section`
     #hero-header {
       font-size: 90px;
@@ -30,11 +36,13 @@ function Herosection() {
       align-items: flex-start;
       justify-content: flex-start;
       top: 300px;
-      width: 100%;
     }
 
     .img-car {
-      height: 700px;
+      max-height: 100%;
+    }
+    #caption-wrapper {
+      max-height: 700px;
     }
 
     #hero-header {
@@ -45,28 +53,38 @@ function Herosection() {
 
     #hero-paragraph {
       font-size: 30px;
+      margin-bottom: 90px;
     }
     .hero-btn {
       background-color: black;
       font-size: 20px;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 950px) {
       #hero-header {
         font-size: 60px;
       }
       #hero-paragraph {
         font-size: 20px;
       }
+      div.carousel-caption {
+        top: 150px;
+      }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 655px) {
+      div.carousel-caption {
+        top: 150px;
+      }
       #hero-header {
-        font-size: 40px;
+        font-size: 35px;
       }
       #hero-paragraph {
         font-size: 15px;
       }
       .hero-btn {
-        font-size: 15px;
+        font-size: 10px;
+      }
+      #hero-paragraph {
+        margin-bottom: 10px;
       }
     }
   `;
@@ -74,36 +92,26 @@ function Herosection() {
   return (
     <>
       <Wrapper>
-        <Carousel.Caption>
-          <h1 id="hero-header">Marvelous Nails</h1>
-          <p id="hero-paragraph">Stylish nails for every occasion</p>
-          <button type="button" className="btn btn-secondary hero-btn">
-            Contact me
-          </button>
-        </Carousel.Caption>
+        <div id="caption-wrapper">
+          <Carousel.Caption>
+            <h1 id="hero-header">Marvelous Nails</h1>
+            <p id="hero-paragraph">Stylish nails for every occasion</p>
+            <button type="button" className="btn btn-secondary hero-btn">
+              Contact me
+            </button>
+          </Carousel.Caption>
+        </div>
 
         <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 img-car"
-              src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              alt="First slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 img-car"
-              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 img-car"
-              src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              alt="Third slide"
-            />
-          </Carousel.Item>
+          {pics.map((pic, index) => (
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-car"
+                src={pic}
+                alt={`slide-${index}`}
+              />
+            </Carousel.Item>
+          ))}
         </Carousel>
       </Wrapper>
     </>
