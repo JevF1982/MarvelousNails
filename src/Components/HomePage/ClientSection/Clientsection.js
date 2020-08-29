@@ -59,6 +59,10 @@ const ClientWrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
   }
+  .client-name-text {
+    font-family: Cinzel;
+  }
+
   .carousel-indicators {
     display: none;
   }
@@ -123,7 +127,7 @@ function Clientsection() {
                 />
               </div>
               <div className="client-name-container">
-                <h4>-Jane Doe-</h4>
+                <h4 className="client-name-text">-Jane Doe-</h4>
               </div>
             </div>
           </div>
@@ -147,7 +151,7 @@ function Clientsection() {
                 />
               </div>
               <div className="client-name-container">
-                <h4>-Sarah Parker-</h4>
+                <h4 className="client-name-text">-Sarah Parker-</h4>
               </div>
             </div>
           </div>
