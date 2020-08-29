@@ -81,7 +81,7 @@ const ClientWrapper = styled.div`
       justify-content: center;
     }
     .client-name-container {
-      margin-left: 20px;
+      margin: 0 20px 0 20px;
     }
   }
 
