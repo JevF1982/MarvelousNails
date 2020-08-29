@@ -95,7 +95,7 @@ function ServiceSection() {
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Read More
                 </button>
-                <img src={require("../static/nails1.jpg")} alt="pic1" />
+                <img src={require("../../static/nails1.jpg")} alt="pic1" />
               </div>
             </Col>
             <Col lg="3" md="6" xs="12" className="img-col">
@@ -104,7 +104,7 @@ function ServiceSection() {
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Read More
                 </button>
-                <img src={require("../static/nails2.jpg")} alt="pic1" />
+                <img src={require("../../static/nails2.jpg")} alt="pic1" />
               </div>
             </Col>
             <Col lg="3" md="6" xs="12" className="img-col">
@@ -113,7 +113,7 @@ function ServiceSection() {
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Read More
                 </button>
-                <img src={require("../static/nails3.jpg")} alt="pic1" />
+                <img src={require("../../static/nails3.jpg")} alt="pic1" />
               </div>
             </Col>
             <Col lg="3" md="6" xs="12" className="img-col">
@@ -122,7 +122,7 @@ function ServiceSection() {
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Read More
                 </button>
-                <img src={require("../static/mn6.jpg")} alt="pic1" />
+                <img src={require("../../static/mn6.jpg")} alt="pic1" />
               </div>
             </Col>
           </Row>

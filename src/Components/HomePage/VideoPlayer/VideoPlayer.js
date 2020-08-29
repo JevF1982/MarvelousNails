@@ -1,8 +1,8 @@
 import React from "react";
-import "../../../node_modules/video-react/dist/video-react.css";
+import "../../../../node_modules/video-react/dist/video-react.css";
 
 import { Player } from "video-react";
-import { useMediaQuery } from "../Utils/useMediaQuery";
+import { useMediaQuery } from "../../Utils/useMediaQuery";
 
 function VideoPlayer() {
   const isRowBased = useMediaQuery("(max-width: 650px)");

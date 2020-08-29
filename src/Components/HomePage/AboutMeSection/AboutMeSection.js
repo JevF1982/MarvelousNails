@@ -1,7 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 import styled from "styled-components";
 
 const AboutMeWrapper = styled.div`
@@ -47,7 +45,7 @@ const AboutMeWrapper = styled.div`
     height: 500px;
     margin: -150px 0 0 0px;
   }
-  @media (max-width: 1400px) {
+  @media (max-width: 1350px) {
     .aboutme-container {
       flex-direction: column;
       width: 100%;
@@ -59,7 +57,7 @@ const AboutMeWrapper = styled.div`
       justify-content: center;
     }
     .aboutme-text-container {
-      margin: 80px 0 0 0;
+      margin: 20px 0 0 0;
     }
   }
 `;
@@ -76,7 +74,7 @@ function AboutMeSection() {
         <div className="aboutme-container">
           <div className="aboutme-img-container">
             <img
-              src={require("../static/profile-lindsey-removebg-preview.png")}
+              src={require("../../static/profile-lindsey-removebg-preview.png")}
               alt="profile-lindsey"
               className="shadowed"
             />

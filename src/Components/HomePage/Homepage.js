@@ -1,10 +1,11 @@
 import React from "react";
 import Navigation from "../Navbar/Navbar";
-import HeroSection from "../Herosection/Herosection";
-import InfoSection from "../InfoSection/InfoSection";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
-import ServiceSection from "../ServiceSection/ServiceSection";
-import AboutMeSection from "../AboutMeSection/AboutMeSection";
+import HeroSection from "../HomePage/Herosection/Herosection";
+import InfoSection from "../HomePage/InfoSection/InfoSection";
+import VideoPlayer from "../HomePage/VideoPlayer/VideoPlayer";
+import ServiceSection from "../HomePage/ServiceSection/ServiceSection";
+import AboutMeSection from "../HomePage/AboutMeSection/AboutMeSection";
+import ClientSection from "../HomePage/ClientSection/Clientsection";
 
 function Homepage() {
   return (
@@ -15,6 +16,7 @@ function Homepage() {
       <VideoPlayer />
       <ServiceSection />
       <AboutMeSection />
+      <ClientSection />
     </div>
   );
 }
