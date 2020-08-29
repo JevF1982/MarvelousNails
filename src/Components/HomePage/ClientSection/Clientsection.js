@@ -43,6 +43,7 @@ const ClientWrapper = styled.div`
   .client-info-container {
     width: 30%;
     display: flex;
+    margin: 40px 0 0 0;
     justify-content: space-between;
   }
   .client-pic-container {
