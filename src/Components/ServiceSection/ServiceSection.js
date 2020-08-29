@@ -48,7 +48,7 @@ function ServiceSection() {
       z-index: 10;
       font-family: Cinzel;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 10;
     }
 
     .hero-btn {

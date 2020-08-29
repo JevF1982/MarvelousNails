@@ -55,7 +55,7 @@ function Herosection() {
 
     #hero-paragraph {
       font-size: 30px;
-      margin-bottom: 90px;
+      margin-bottom: 60px;
       font-family: Cinzel;
       text-transform: uppercase;
     }
