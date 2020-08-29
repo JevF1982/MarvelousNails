@@ -14,6 +14,8 @@ function Herosection() {
       font-size: 90px;
       display: flex;
       justify-content: center;
+      font-family: Cinzel;
+      text-transform: uppercase;
     }
     .carousel-inner {
       max-height: 700px;
@@ -54,6 +56,8 @@ function Herosection() {
     #hero-paragraph {
       font-size: 30px;
       margin-bottom: 90px;
+      font-family: Cinzel;
+      text-transform: uppercase;
     }
     .hero-btn {
       background-color: black;
@@ -97,7 +101,7 @@ function Herosection() {
             <h1 id="hero-header">Marvelous Nails</h1>
             <p id="hero-paragraph">Stylish nails for every occasion</p>
             <button type="button" className="btn btn-secondary hero-btn">
-              Contact me
+              ... Contact me
             </button>
           </Carousel.Caption>
         </div>

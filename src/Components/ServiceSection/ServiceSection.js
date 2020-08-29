@@ -9,6 +9,8 @@ function ServiceSection() {
     .service-header {
       width: 300px;
       left: 0px;
+      font-family: Cinzel;
+      text-transform: uppercase;
     }
 
     #underline {
@@ -44,6 +46,9 @@ function ServiceSection() {
       left: 90px;
       color: white;
       z-index: 10;
+      font-family: Cinzel;
+      text-transform: uppercase;
+      font-weight: 400;
     }
 
     .hero-btn {
@@ -52,6 +57,8 @@ function ServiceSection() {
       font-size: 17px;
       top: 370px;
       left: 90px;
+
+      font-weight: 400;
       z-index: 10;
     }
 

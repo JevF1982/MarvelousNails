@@ -14,8 +14,10 @@ function InfoSection() {
       width: 100%;
     }
     h1 {
-      width: 300px;
+      width: 400px;
       left: 0px;
+      font-family: Cinzel;
+      text-transform: uppercase;
     }
     .container {
       height: 500px;
