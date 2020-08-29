@@ -57,6 +57,11 @@ function InfoSection() {
         margin-top: 35px;
       }
     }
+    @media (max-width: 650px) {
+      .btn {
+        font-size: 15px;
+      }
+    }
   `;
 
   return (

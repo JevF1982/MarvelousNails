@@ -3,6 +3,7 @@ import Navigation from "../Navbar/Navbar";
 import HeroSection from "../Herosection/Herosection";
 import InfoSection from "../InfoSection/InfoSection";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import ServiceSection from "../ServiceSection/ServiceSection";
 
 function Homepage() {
   return (
@@ -11,6 +12,7 @@ function Homepage() {
       <HeroSection />
       <InfoSection />
       <VideoPlayer />
+      <ServiceSection />
     </div>
   );
 }

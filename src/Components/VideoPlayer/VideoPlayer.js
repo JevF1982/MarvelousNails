@@ -17,7 +17,7 @@ function VideoPlayer() {
     >
       <div
         style={{
-          width: !isRowBased ? "900px" : " 400px",
+          width: !isRowBased ? "900px" : " 300px",
           marginBottom: "150px",
           maxHeight: "500px",
         }}

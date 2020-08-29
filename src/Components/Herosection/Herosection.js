@@ -9,7 +9,7 @@ function Herosection() {
     "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
   ];
 
-  const Wrapper = styled.section`
+  const HeroWrapper = styled.section`
     #hero-header {
       font-size: 90px;
       display: flex;
@@ -72,7 +72,7 @@ function Herosection() {
     }
     @media (max-width: 655px) {
       div.carousel-caption {
-        top: 150px;
+        top: 70px;
       }
       #hero-header {
         font-size: 35px;
@@ -81,7 +81,7 @@ function Herosection() {
         font-size: 15px;
       }
       .hero-btn {
-        font-size: 10px;
+        font-size: 15px;
       }
       #hero-paragraph {
         margin-bottom: 10px;
@@ -91,7 +91,7 @@ function Herosection() {
 
   return (
     <>
-      <Wrapper>
+      <HeroWrapper>
         <div id="caption-wrapper">
           <Carousel.Caption>
             <h1 id="hero-header">Marvelous Nails</h1>
@@ -104,7 +104,7 @@ function Herosection() {
 
         <Carousel>
           {pics.map((pic, index) => (
-            <Carousel.Item>
+            <Carousel.Item key={index}>
               <img
                 className="d-block w-100 img-car"
                 src={pic}
@@ -113,7 +113,7 @@ function Herosection() {
             </Carousel.Item>
           ))}
         </Carousel>
-      </Wrapper>
+      </HeroWrapper>
     </>
   );
 }
