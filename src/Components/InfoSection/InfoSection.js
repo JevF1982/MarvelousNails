@@ -4,68 +4,68 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 
-function InfoSection() {
-  const Wrapper = styled.div`
+const Wrapper = styled.div`
+  .left-col {
+    margin-top: 120px;
+
+    margin-right: 300px;
+    font-weight: 1px;
+    width: 100%;
+  }
+  h1 {
+    width: 400px;
+    left: 0px;
+    font-family: Cinzel;
+    text-transform: uppercase;
+  }
+  .container {
+    height: 500px;
+    width: 100%;
+  }
+  #underline {
+    height: 5px;
+    border: none;
+    color: #000;
+    background-color: #000;
+    width: 20%;
+    border-radius: 20px;
+    margin: 20px 0 0 10px;
+  }
+
+  ////////right col////////
+  .right-col {
+    margin-top: 120px;
+    justify-content: flex-start;
+  }
+  p {
+    margin-bottom: 60px;
+  }
+  .btn {
+    background-color: black;
+    font-size: 20px;
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  @media (max-width: 900px) {
     .left-col {
-      margin-top: 120px;
-
-      margin-right: 300px;
-      font-weight: 1px;
-      width: 100%;
+      display: none;
     }
-    h1 {
-      width: 400px;
-      left: 0px;
-      font-family: Cinzel;
-      text-transform: uppercase;
-    }
-    .container {
-      height: 500px;
-      width: 100%;
-    }
-    #underline {
-      height: 5px;
-      border: none;
-      color: #000;
-      background-color: #000;
-      width: 20%;
-      border-radius: 20px;
-      margin: 20px 0 0 10px;
-    }
-
-    ////////right col////////
     .right-col {
-      margin-top: 120px;
-      justify-content: flex-start;
+      padding: 40px;
+      margin-top: 35px;
     }
-    p {
-      margin-bottom: 60px;
-    }
+  }
+  @media (max-width: 650px) {
     .btn {
-      background-color: black;
-      font-size: 20px;
+      font-size: 15px;
     }
-    .btn-div {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-    }
-    @media (max-width: 900px) {
-      .left-col {
-        display: none;
-      }
-      .right-col {
-        padding: 40px;
-        margin-top: 35px;
-      }
-    }
-    @media (max-width: 650px) {
-      .btn {
-        font-size: 15px;
-      }
-    }
-  `;
+  }
+`;
 
+function InfoSection() {
   return (
     <Wrapper>
       <Container className="container">

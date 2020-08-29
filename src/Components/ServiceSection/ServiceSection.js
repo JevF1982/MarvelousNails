@@ -4,76 +4,76 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 
-function ServiceSection() {
-  const ServiceWrapper = styled.div`
-    .service-header {
-      width: 300px;
-      left: 0px;
-      font-family: Cinzel;
-      text-transform: uppercase;
-    }
+const ServiceWrapper = styled.div`
+  .service-header {
+    width: 300px;
+    left: 0px;
+    font-family: Cinzel;
+    text-transform: uppercase;
+  }
 
-    #underline {
-      height: 5px;
-      border: none;
-      color: #000;
-      background-color: #000;
-      width: 20%;
-      border-radius: 20px;
-      margin: 20px 0 0 40px;
-    }
+  #underline {
+    height: 5px;
+    border: none;
+    color: #000;
+    background-color: #000;
+    width: 20%;
+    border-radius: 20px;
+    margin: 20px 0 0 40px;
+  }
 
-    img {
-      height: 500px;
-      width: 100%;
+  img {
+    height: 500px;
+    width: 100%;
 
-      opacity: 0.8;
-    }
+    opacity: 0.8;
+  }
 
-    .img-col {
-      padding: 0px !important;
-      margin: 0px !important;
-    }
+  .img-col {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
 
-    .img-container {
-      background: black;
-      overflow: hidden;
-    }
+  .img-container {
+    background: black;
+    overflow: hidden;
+  }
 
-    .img-header {
-      position: absolute;
-      top: 300px;
-      left: 90px;
-      color: white;
-      z-index: 10;
-      font-family: Cinzel;
-      text-transform: uppercase;
-      font-weight: 10;
-    }
+  .img-header {
+    position: absolute;
+    top: 300px;
+    left: 90px;
+    color: white;
+    z-index: 10;
+    font-family: Cinzel, serif;
+    text-transform: uppercase;
+    font-weight: 10;
+  }
 
+  .hero-btn {
+    position: absolute;
+    background-color: black;
+    font-size: 17px;
+    top: 370px;
+    left: 90px;
+
+    font-weight: 400;
+    z-index: 10;
+  }
+
+  @media (max-width: 1290px) {
     .hero-btn {
-      position: absolute;
-      background-color: black;
-      font-size: 17px;
+      top: 420px;
+    }
+  }
+  @media (max-width: 990px) {
+    .hero-btn {
       top: 370px;
-      left: 90px;
-
-      font-weight: 400;
-      z-index: 10;
     }
+  }
+`;
 
-    @media (max-width: 1290px) {
-      .hero-btn {
-        top: 420px;
-      }
-    }
-    @media (max-width: 990px) {
-      .hero-btn {
-        top: 370px;
-      }
-    }
-  `;
-
+function ServiceSection() {
   return (
     <ServiceWrapper>
       <div>

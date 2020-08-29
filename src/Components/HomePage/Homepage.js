@@ -4,6 +4,7 @@ import HeroSection from "../Herosection/Herosection";
 import InfoSection from "../InfoSection/InfoSection";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import ServiceSection from "../ServiceSection/ServiceSection";
+import AboutMeSection from "../AboutMeSection/AboutMeSection";
 
 function Homepage() {
   return (
@@ -13,6 +14,7 @@ function Homepage() {
       <InfoSection />
       <VideoPlayer />
       <ServiceSection />
+      <AboutMeSection />
     </div>
   );
 }
