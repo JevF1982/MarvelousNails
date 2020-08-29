@@ -11,15 +11,15 @@ const AppointmentWrapper = styled.div`
     position: relative;
   }
   .img-container {
-    width: 50%;
+    width: 40%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .text-container {
     font-family: Cinzel;
     text-transform: uppercase;
     margin: 150px 0 0 0;
-    width: 50%;
+    width: 70%;
   }
   .hero-btn {
     background-color: black;
@@ -29,7 +29,7 @@ const AppointmentWrapper = styled.div`
     z-index: 10;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 950px) {
     .main-container {
       flex-direction: column;
       height: auto;
