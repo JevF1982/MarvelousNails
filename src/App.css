@@ -14,3 +14,7 @@
 ol.carousel-indicators {
   display: none !important;
 }
+
+ul li {
+  list-style: none;
+}

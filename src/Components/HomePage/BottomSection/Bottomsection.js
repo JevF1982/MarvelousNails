@@ -21,7 +21,7 @@ const BottomWrapper = styled.div`
     margin: 15px 0 0 0;
   }
   .col-container {
-    margin-top: 70px;
+    margin: 70px 0 70px 0;
   }
   .header {
     font-family: Cinzel, serif;
@@ -61,7 +61,7 @@ const BottomWrapper = styled.div`
     margin: 10px 0 15px 0;
   }
   .tile-container {
-    margin-top: 10px;
+    margin-top: 35px;
   }
   .img-tile {
     width: 70px;

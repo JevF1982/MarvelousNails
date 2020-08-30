@@ -12,6 +12,10 @@ const NavWrapper = styled.div`
     left: 50px;
   }
 
+  .nav-link {
+    color: white !important;
+  }
+
   @media (max-width: 400px) {
     .nav-logo {
       left: 10px;

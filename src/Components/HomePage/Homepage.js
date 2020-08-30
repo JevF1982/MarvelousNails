@@ -9,6 +9,7 @@ import ClientSection from "../HomePage/ClientSection/Clientsection";
 import AppointmentSection from "../HomePage/AppointmentSection/AppointmentSection";
 import ImgSection from "../HomePage/ImgSection/ImgSection";
 import BottomSection from "../HomePage/BottomSection/Bottomsection";
+import Footer from "../Footer/Footer";
 
 function Homepage() {
   return (
@@ -23,6 +24,7 @@ function Homepage() {
       <AppointmentSection />
       <ImgSection />
       <BottomSection />
+      <Footer />
     </div>
   );
 }
