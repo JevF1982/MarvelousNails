@@ -8,6 +8,7 @@ import AboutMeSection from "../HomePage/AboutMeSection/AboutMeSection";
 import ClientSection from "../HomePage/ClientSection/Clientsection";
 import AppointmentSection from "../HomePage/AppointmentSection/AppointmentSection";
 import ImgSection from "../HomePage/ImgSection/ImgSection";
+import BottomSection from "../HomePage/BottomSection/Bottomsection";
 
 function Homepage() {
   return (
@@ -21,6 +22,7 @@ function Homepage() {
       <ClientSection />
       <AppointmentSection />
       <ImgSection />
+      <BottomSection />
     </div>
   );
 }
