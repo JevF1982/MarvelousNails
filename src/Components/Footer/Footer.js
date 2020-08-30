@@ -25,7 +25,7 @@ const FooterWrapper = styled.div`
     padding: 0px;
   }
   .footer-brand {
-    margin: 20px 0 0 300px;
+    margin: 0 0 0 300px;
   }
 
   @media (max-width: 1350px) {
@@ -33,19 +33,20 @@ const FooterWrapper = styled.div`
       flex-direction: column-reverse;
       height: 140px;
     }
-  }
-  .footer-brand {
-    margin: 25px 0 30px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .link-container {
-    margin: 20px 0 0 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+
+    .footer-brand {
+      margin: 0px 0 30px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .link-container {
+      margin: 20px 0 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
   }
   @media (max-width: 700px) {
     li {
