@@ -10,3 +10,7 @@
   background-color: black !important;
   z-index: 100 !important;
 }
+
+ol.carousel-indicators {
+  display: none !important;
+}

@@ -10,6 +10,7 @@ const AppointmentWrapper = styled.div`
     margin: 110px 0 0 0;
     position: relative;
   }
+
   .img-container {
     width: 40%;
     display: flex;
@@ -27,6 +28,15 @@ const AppointmentWrapper = styled.div`
     margin: 50px 190px 0 0;
     font-weight: 400;
     z-index: 10;
+  }
+  #underline {
+    height: 5px;
+    border: none;
+    color: #000;
+    background-color: #000;
+    width: 5%;
+    border-radius: 20px;
+    margin: 20px 0 0 350px;
   }
 
   @media (max-width: 950px) {
@@ -47,6 +57,13 @@ const AppointmentWrapper = styled.div`
       font-size: 16px;
       width: 200px;
     }
+    #underline {
+      height: 5px;
+
+      width: 10%;
+
+      margin: 20px 0 0 30px;
+    }
   }
 `;
 
@@ -61,12 +78,14 @@ function AppointmentSection() {
           />
         </div>
         <div className="text-container">
-          <h1>Make an Appointment</h1>
+          <h1>
+            Make an Appointment <hr id="underline" />
+          </h1>
           <h5 style={{ marginTop: "50px" }}>
             We will get back to you as soon as possible
           </h5>
           <button type="button" className="btn btn-secondary hero-btn">
-            ...Book Appointment
+            Book Appointment
           </button>
         </div>
       </div>

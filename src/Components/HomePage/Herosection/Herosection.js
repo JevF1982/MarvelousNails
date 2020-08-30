@@ -10,6 +10,7 @@ const HeroWrapper = styled.section`
     font-family: Cinzel;
     text-transform: uppercase;
   }
+
   .carousel-inner {
     max-height: 700px;
     background-size: cover !important;
@@ -69,7 +70,7 @@ const HeroWrapper = styled.section`
   }
   @media (max-width: 655px) {
     div.carousel-caption {
-      top: 70px;
+      top: 170px;
     }
     #hero-header {
       font-size: 35px;
@@ -82,6 +83,20 @@ const HeroWrapper = styled.section`
     }
     #hero-paragraph {
       margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 400px) {
+    div.carousel-caption {
+      top: 120px;
+    }
+    #hero-header {
+      font-size: 32px;
+    }
+    #hero-paragraph {
+      font-size: 12px;
+    }
+    .hero-btn {
+      font-size: 12px;
     }
   }
 `;
