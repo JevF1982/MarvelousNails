@@ -89,12 +89,12 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="services" className="footer-links">
+              <a href="/services" className="footer-links">
                 Services
               </a>
             </li>
             <li>
-              <a href="Contact" className="footer-links">
+              <a href="/contact" className="footer-links">
                 Contact
               </a>
             </li>
