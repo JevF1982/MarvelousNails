@@ -18,3 +18,11 @@ ol.carousel-indicators {
 ul li {
   list-style: none;
 }
+
+.jumbotron {
+  background-image: url("./Components/static/asap.jpg");
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+  height: 250px;
+}

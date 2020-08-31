@@ -162,34 +162,34 @@ function Bottomsection() {
               <div className="tile-container">
                 <div className="tile-row">
                   <img
-                    src={require("../../static/nails/nails-img  (1).jpg")}
+                    src={require("../../static/nails/nail-img (1).jpg")}
                     alt="img-1"
                     className="img-tile"
                   />
                   <img
-                    src={require("../../static/nails/nails-img  (2).jpg")}
+                    src={require("../../static/nails/nail-img (2).jpg")}
                     alt="img-2"
                     className="img-tile"
                   />
                   <img
-                    src={require("../../static/nails/nails-img  (5).jpg")}
+                    src={require("../../static/nails/nail-img (5).jpg")}
                     alt="img-5"
                     className="img-tile"
                   />
                 </div>
                 <div className="tile-row">
                   <img
-                    src={require("../../static/nails/nails-img  (3).jpg")}
+                    src={require("../../static/nails/nail-img (3).jpg")}
                     alt="img-3"
                     className="img-tile"
                   />
                   <img
-                    src={require("../../static/nails/nails-img  (4).jpg")}
+                    src={require("../../static/nails/nail-img (4).jpg")}
                     alt="img-4"
                     className="img-tile"
                   />
                   <img
-                    src={require("../../static/nails/nails-img  (6).jpg")}
+                    src={require("../../static/nails/nail-img (6).jpg")}
                     alt="img-6"
                     className="img-tile"
                   />

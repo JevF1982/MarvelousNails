@@ -78,27 +78,23 @@ function Footer() {
         <div className="link-container">
           <ul style={{ display: "flex" }}>
             <li>
-              <a href="#" className="footer-links">
+              <a href="/" className="footer-links">
                 Home
               </a>
             </li>
+
             <li>
-              <a href="#" className="footer-links">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="footer-links">
+              <a href="/lookbook" className="footer-links">
                 Lookbook
               </a>
             </li>
             <li>
-              <a href="#" className="footer-links">
+              <a href="services" className="footer-links">
                 Services
               </a>
             </li>
             <li>
-              <a href="#" className="footer-links">
+              <a href="Contact" className="footer-links">
                 Contact
               </a>
             </li>

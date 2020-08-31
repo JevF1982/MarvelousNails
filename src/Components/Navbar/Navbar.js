@@ -38,19 +38,17 @@ function Navigation() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav ">
             <Nav className="m-auto">
-              <Nav.Link href="#home" className="mr-5">
+              <Nav.Link href="/" className="mr-5">
                 Home
               </Nav.Link>
-              <Nav.Link eventKey={2} href="#about" className="mr-5">
-                About
-              </Nav.Link>
-              <Nav.Link eventKey={2} href="#services" className="mr-5">
+
+              <Nav.Link eventKey={2} href="/services" className="mr-5">
                 Services
               </Nav.Link>
-              <Nav.Link eventKey={2} href="#lookbook" className="mr-5">
+              <Nav.Link eventKey={2} href="/lookbook" className="mr-5">
                 Lookbook
               </Nav.Link>
-              <Nav.Link eventKey={2} href="#contact" className="mr-5">
+              <Nav.Link eventKey={2} href="/contact" className="mr-5">
                 Contact
               </Nav.Link>
             </Nav>
