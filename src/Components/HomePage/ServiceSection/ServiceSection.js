@@ -91,7 +91,7 @@ function ServiceSection() {
           <Row>
             <Col lg="3" md="6" xs="12" className="img-col">
               <div className="img-container">
-                <h1 className="img-header">Gel Nagels</h1>
+                <h1 className="img-header">Verlenging</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Read More
                 </button>
@@ -118,7 +118,7 @@ function ServiceSection() {
             </Col>
             <Col lg="3" md="6" xs="12" className="img-col">
               <div className="img-container">
-                <h1 className="img-header">Test</h1>
+                <h1 className="img-header">Babyboom</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Read More
                 </button>
