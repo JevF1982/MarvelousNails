@@ -66,11 +66,6 @@ function ImgSection() {
     <ImgWrapper>
       <div className="container-fluid">
         <Row>
-          {/* <Col lg="2" md="6" xs="12" className="img-col">
-            <div className="img-container">
-              <img src={require("../../static/nails1.jpg")} alt="pic1" />
-            </div>
-          </Col> */}
           {images.map((img, index) => (
             <Col lg="2" md="6" xs="12" className="img-col" key={index}>
               <div className="img-container">
