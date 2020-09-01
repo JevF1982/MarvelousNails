@@ -226,7 +226,7 @@ function PriceBlock() {
                 >
                   <span className="price-row">
                     {Prices.extra.nailArt.name}
-                    ............................................
+                    ...............................
                     {Prices.extra.nailArt.price}
                   </span>
                   <span className="price-row">
@@ -236,7 +236,7 @@ function PriceBlock() {
                   </span>
                   <span className="price-row">
                     {Prices.extra.reparatie.name}{" "}
-                    .............................................
+                    ......................................
                     {Prices.extra.reparatie.price}
                   </span>
                 </div>
