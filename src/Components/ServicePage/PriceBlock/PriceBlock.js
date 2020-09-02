@@ -148,7 +148,7 @@ function PriceBlock() {
                   ...Book Now
                 </button>
                 <img
-                  src={require("../../static/nails/nail-img (22).jpg")}
+                  src={require("../../static/nails/nail-img (22).webp")}
                   alt="pic1"
                 />
               </div>
@@ -204,7 +204,7 @@ function PriceBlock() {
                   ...Book Now
                 </button>
                 <img
-                  src={require("../../static/nails/nail-img (18).jpg")}
+                  src={require("../../static/nails/nail-img (18).webp")}
                   alt="pic1"
                 />
               </div>
@@ -247,7 +247,7 @@ function PriceBlock() {
                   ...Book Now
                 </button>
                 <img
-                  src={require("../../static/nails/nail-img (12).jpg")}
+                  src={require("../../static/nails/nail-img (12).webp")}
                   alt="pic1"
                 />
               </div>

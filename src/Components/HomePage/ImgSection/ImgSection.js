@@ -43,22 +43,22 @@ const ImgWrapper = styled.div`
 function ImgSection() {
   const images = [
     {
-      img: require("../../static/nails/nail-img (1).jpg"),
+      img: require("../../static/nails/nail-img (1).webp"),
     },
     {
-      img: require("../../static/nails/nail-img (2).jpg"),
+      img: require("../../static/nails/nail-img (2).webp"),
     },
     {
-      img: require("../../static/nails/nail-img (3).jpg"),
+      img: require("../../static/nails/nail-img (3).webp"),
     },
     {
-      img: require("../../static/nails/nail-img (4).jpg"),
+      img: require("../../static/nails/nail-img (4).webp"),
     },
     {
-      img: require("../../static/nails/nail-img (5).jpg"),
+      img: require("../../static/nails/nail-img (5).webp"),
     },
     {
-      img: require("../../static/nails/nail-img (6).jpg"),
+      img: require("../../static/nails/nail-img (6).webp"),
     },
   ];
 

@@ -99,7 +99,10 @@ function ServiceSection() {
                 <button type="button" className="btn btn-secondary hero-btn">
                   <a href="/services"> ...Read More</a>
                 </button>
-                <img src={require("../../static/nails1.jpg")} alt="pic1" />
+                <img
+                  src={require("../../static/nails/nail-img (12).webp")}
+                  alt="pic1"
+                />
               </div>
             </Col>
             <Col lg="3" md="6" xs="12" className="img-col">
@@ -109,7 +112,7 @@ function ServiceSection() {
                   <a href="/services"> ...Read More</a>
                 </button>
                 <img
-                  src={require("../../static/nails/nails2.jpg")}
+                  src={require("../../static/nails/nails2.webp")}
                   alt="pic1"
                 />
               </div>
@@ -121,7 +124,7 @@ function ServiceSection() {
                   <a href="/services"> ...Read More</a>
                 </button>
                 <img
-                  src={require("../../static/nails/nails4.jpg")}
+                  src={require("../../static/nails/nails4.webp")}
                   alt="pic1"
                 />
               </div>
@@ -132,7 +135,7 @@ function ServiceSection() {
                 <button type="button" className="btn btn-secondary hero-btn">
                   <a href="/services"> ...Read More</a>
                 </button>
-                <img src={require("../../static/nails/mn6.jpg")} alt="pic1" />
+                <img src={require("../../static/nails/mn6.webp")} alt="pic1" />
               </div>
             </Col>
           </Row>
