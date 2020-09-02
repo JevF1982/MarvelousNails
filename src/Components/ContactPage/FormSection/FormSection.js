@@ -24,6 +24,7 @@ function FormSection() {
   });
 
   const onSubmit = (e) => {
+    // document.getElementById("main-form").submit();
     e.preventDefault();
     const service_id = "default_service";
     const template_id = "template_DRR7N90x";
@@ -71,7 +72,7 @@ function FormSection() {
           </HeaderMain>
         </div>
         <Container>
-          <Form id="main-form" onSubmit={onSubmit}>
+          <Form id="main-form">
             <Form.Row>
               <Form.Group
                 as={Col}
@@ -163,7 +164,6 @@ function FormSection() {
                 className="g-recaptcha"
                 data-sitekey={process.env.REACT_APP_CAPTCHAKEY}
                 data-action="submit"
-                type="submit"
                 onClick={onSubmit}
               >
                 Submit
