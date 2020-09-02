@@ -35,7 +35,7 @@ const AboutMeWrapper = styled.div`
   }
   .aboutme-text-container {
     margin: 50px 50px 50px 0;
-    width: 60%;
+    width: 30%;
     padding: 50px;
   }
   .aboutme-img-container {
@@ -81,20 +81,13 @@ function AboutMeSection() {
           </div>
           <div className="aboutme-text-container">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-              officia expedita, molestias veniam repellat itaque tenetur id,
-              sunt optio, aliquid magni quibusdam iste amet error eos
-              necessitatibus voluptate debitis cupiditate? Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit.
+              Mijn naam is Lindsey Dewallef, ik ben al 7 jaar een professioneel
+              gecertificeerde all-round nagelstyliste en focus mij sinds 4 jaar
+              uitsluitend op het plaatsen van gel nagels.
               <br />
-              <br />
-              <br /> Dolores officia expedita, molestias veniam repellat itaque
-              tenetur id, sunt optio, aliquid magni quibusdam iste amet error
-              eos necessitatibus voluptate debitis cupiditate? Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Dolores officia expedita,
-              molestias veniam repellat itaque tenetur id, sunt optio, aliquid
-              magni quibusdam iste amet error eos necessitatibus voluptate
-              debitis cupiditate?
+              <br /> Ik werd al op jonge leeftijd gebeten door de microben en
+              startte zo mijn zaak ‘Marvelous Nails’ op in Genk, België. Hier
+              werk ik elke dag met passie voor het vak en oog voor detail.
             </p>
           </div>
         </div>

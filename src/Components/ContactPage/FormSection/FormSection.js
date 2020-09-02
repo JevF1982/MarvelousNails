@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import styled from "styled-components";
+require("dotenv").config();
 
 const FormSectionWrapper = styled.div`
   .form-control {
@@ -12,6 +13,10 @@ const FormSectionWrapper = styled.div`
 `;
 
 function FormSection() {
+  const onSubmit = (token) => {
+    document.getElementById("demo-form").submit();
+  };
+
   return (
     <FormSectionWrapper>
       <div>
@@ -78,6 +83,7 @@ function FormSection() {
             <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Control as="textarea" rows="6" placeholder="Your Message" />
             </Form.Group>
+
             <div
               style={{
                 display: "flex",
@@ -85,7 +91,14 @@ function FormSection() {
                 margin: "50px 0 90px 0 ",
               }}
             >
-              <MainButton>Submit</MainButton>
+              <MainButton
+                className="g-recaptcha"
+                data-sitekey={process.env.REACT_APP_CAPTCHAKEY}
+                data-callback={onSubmit}
+                data-action="submit"
+              >
+                Submit
+              </MainButton>
             </div>
           </Form>
         </Container>

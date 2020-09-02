@@ -91,7 +91,10 @@ function Bottomsection() {
               </p>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <div>
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com/Marvelousnailsnagelstudio/"
+                    target="_blank"
+                  >
                     <img
                       src={require("../../static/logos/facebook.png")}
                       alt="facebook-logo"
@@ -100,7 +103,10 @@ function Bottomsection() {
                   </a>
                 </div>
                 <div>
-                  <a href="#">
+                  <a
+                    href="https://www.instagram.com/marvelousssnails/"
+                    target="_blank"
+                  >
                     <img
                       src={require("../../static/logos/insta.png")}
                       alt="instagram-logo"
@@ -123,7 +129,9 @@ function Bottomsection() {
                     alt="map-logo"
                     className="contact-icons"
                   />
-                  <span className="contact-text">Dorpstraat 28/1 As</span>
+                  <span className="contact-text">
+                    Weg naar As 272/1 3600 Genk Belgie
+                  </span>
                 </div>
                 <div className="contact-row">
                   <img
@@ -131,7 +139,9 @@ function Bottomsection() {
                     alt="email-logo"
                     className="contact-icons"
                   />
-                  <span className="contact-text">faustjurgen@gmail.com</span>
+                  <span className="contact-text">
+                    lindseydewallef@hotmail.com
+                  </span>
                 </div>
                 <div className="contact-row">
                   <img
@@ -149,7 +159,7 @@ function Bottomsection() {
                     alt="phone-logo"
                     className="contact-icons"
                   />
-                  <span className="contact-text">0473375959</span>
+                  <span className="contact-text">0473/24.30.16</span>
                 </div>
               </div>
             </Col>
