@@ -242,7 +242,7 @@ function PriceBlock() {
                 </div>
               </div>
               <div className="img-container">
-                <h1 className="img-header">Bijwerken</h1>
+                <h1 className="img-header">Extras</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
                   ...Book Now
                 </button>
