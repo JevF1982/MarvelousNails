@@ -11,6 +11,10 @@ const ServiceWrapper = styled.div`
     font-family: Cinzel;
     text-transform: uppercase;
   }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   #underline {
     height: 5px;
@@ -93,7 +97,7 @@ function ServiceSection() {
               <div className="img-container">
                 <h1 className="img-header">Verlenging</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Read More
+                  <a href="/services"> ...Read More</a>
                 </button>
                 <img src={require("../../static/nails1.jpg")} alt="pic1" />
               </div>
@@ -102,7 +106,7 @@ function ServiceSection() {
               <div className="img-container">
                 <h1 className="img-header">Rubber Base</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Read More
+                  <a href="/services"> ...Read More</a>
                 </button>
                 <img src={require("../../static/nails2.jpg")} alt="pic1" />
               </div>
@@ -111,7 +115,7 @@ function ServiceSection() {
               <div className="img-container">
                 <h1 className="img-header">French</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Read More
+                  <a href="/services"> ...Read More</a>
                 </button>
                 <img src={require("../../static/nails3.jpg")} alt="pic1" />
               </div>
@@ -120,7 +124,7 @@ function ServiceSection() {
               <div className="img-container">
                 <h1 className="img-header">Babyboom</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Read More
+                  <a href="/services"> ...Read More</a>
                 </button>
                 <img src={require("../../static/mn6.jpg")} alt="pic1" />
               </div>

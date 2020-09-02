@@ -11,6 +11,11 @@ const HeroWrapper = styled.section`
     text-transform: uppercase;
   }
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   .carousel-inner {
     max-height: 700px;
     background-size: cover !important;
@@ -116,7 +121,7 @@ function Herosection() {
             <h1 id="hero-header">Marvelous Nails</h1>
             <p id="hero-paragraph">Stylish nails for every occasion</p>
             <button type="button" className="btn btn-secondary hero-btn">
-              ... Contact me
+              <a href="/contact"> ... Contact me</a>
             </button>
           </Carousel.Caption>
         </div>
