@@ -10,10 +10,12 @@ import AppointmentSection from "../HomePage/AppointmentSection/AppointmentSectio
 import ImgSection from "../HomePage/ImgSection/ImgSection";
 import BottomSection from "../HomePage/BottomSection/Bottomsection";
 import Footer from "../Footer/Footer";
+import CookieBan from "../Utils/CookieBan";
 
 function Homepage() {
   return (
     <div>
+      <CookieBan />
       <Navigation />
       <HeroSection />
       <InfoSection />

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { MainButton, Hr, HeaderMain } from "../../Styles/ElementStyles";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import styled from "styled-components";
-require("dotenv").config();
+import emailjs from "emailjs-com";
 
 const FormSectionWrapper = styled.div`
   .form-control {
@@ -13,8 +13,46 @@ const FormSectionWrapper = styled.div`
 `;
 
 function FormSection() {
-  const onSubmit = (token) => {
-    document.getElementById("demo-form").submit();
+  const [FormValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+    isSent: false,
+    isNotSent: false,
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const service_id = "default_service";
+    const template_id = "template_DRR7N90x";
+    const user_id = process.env.REACT_APP_USERID;
+
+    emailjs.send(service_id, template_id, FormValues, user_id).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        if (response.status === 200) {
+          setFormValues({
+            isSent: true,
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        }
+      },
+      (err) => {
+        setFormValues({
+          isNotSent: true,
+        });
+        console.log("FAILED...", err);
+      }
+    );
+  };
+
+  const handleChange = (e) => {
+    setFormValues({ ...FormValues, [e.target.name]: e.target.value });
   };
 
   return (
@@ -33,7 +71,7 @@ function FormSection() {
           </HeaderMain>
         </div>
         <Container>
-          <Form>
+          <Form id="main-form" onSubmit={onSubmit}>
             <Form.Row>
               <Form.Group
                 as={Col}
@@ -42,7 +80,14 @@ function FormSection() {
                 md="6"
                 xs="12"
               >
-                <Form.Control type="text" placeholder="Your Name*" required />
+                <Form.Control
+                  type="text"
+                  placeholder="Your Name*"
+                  required
+                  value={FormValues.name || ""}
+                  name="name"
+                  onChange={handleChange}
+                />
               </Form.Group>
 
               <Form.Group
@@ -56,6 +101,9 @@ function FormSection() {
                   type="email"
                   placeholder="Email Address*"
                   required
+                  value={FormValues.email || ""}
+                  name="email"
+                  onChange={handleChange}
                 />
               </Form.Group>
             </Form.Row>
@@ -67,7 +115,14 @@ function FormSection() {
                 md="6"
                 xs="12"
               >
-                <Form.Control type="text" placeholder="Phone Number" required />
+                <Form.Control
+                  type="text"
+                  placeholder="Phone Number"
+                  required
+                  value={FormValues.phone || ""}
+                  name="phone"
+                  onChange={handleChange}
+                />
               </Form.Group>
 
               <Form.Group
@@ -77,11 +132,24 @@ function FormSection() {
                 md="6"
                 xs="12"
               >
-                <Form.Control type="text" placeholder="Subject" />
+                <Form.Control
+                  type="text"
+                  placeholder="Subject"
+                  value={FormValues.subject || ""}
+                  name="subject"
+                  onChange={handleChange}
+                />
               </Form.Group>
             </Form.Row>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows="6" placeholder="Your Message" />
+              <Form.Control
+                as="textarea"
+                rows="6"
+                placeholder="Your Message"
+                value={FormValues.message || ""}
+                name="message"
+                onChange={handleChange}
+              />
             </Form.Group>
 
             <div
@@ -94,8 +162,9 @@ function FormSection() {
               <MainButton
                 className="g-recaptcha"
                 data-sitekey={process.env.REACT_APP_CAPTCHAKEY}
-                data-callback={onSubmit}
                 data-action="submit"
+                type="submit"
+                onClick={onSubmit}
               >
                 Submit
               </MainButton>

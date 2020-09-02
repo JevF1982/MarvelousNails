@@ -60,6 +60,13 @@ const AboutMeWrapper = styled.div`
       margin: 20px 0 0 0;
     }
   }
+  @media (max-width: 1000px) {
+    .aboutme-text-container {
+      margin: 0;
+      width: 100%;
+      padding: 50px;
+    }
+  }
 `;
 
 function AboutMeSection() {

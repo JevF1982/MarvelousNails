@@ -94,11 +94,13 @@ function Bottomsection() {
                   <a
                     href="https://www.facebook.com/Marvelousnailsnagelstudio/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={require("../../static/logos/facebook.png")}
                       alt="facebook-logo"
                       className="logo"
+                      rel="noopener noreferrer"
                     />
                   </a>
                 </div>
@@ -106,6 +108,7 @@ function Bottomsection() {
                   <a
                     href="https://www.instagram.com/marvelousssnails/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={require("../../static/logos/insta.png")}
