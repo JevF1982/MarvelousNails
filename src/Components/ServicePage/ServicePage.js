@@ -1,18 +1,27 @@
-import React from "react";
+import React, { Suspense } from "react";
 import NavBar from "../Navbar/Navbar";
-import HeroMulti from "../HeroMulti/HeroMulti";
-import PriceBlock from "./PriceBlock/PriceBlock";
-import Bottomsection from "../HomePage/BottomSection/Bottomsection";
-import Footer from "../Footer/Footer";
+
+import Spinner from "react-bootstrap/Spinner";
+
+const Bottomsection = React.lazy(() =>
+  import("../HomePage/BottomSection/Bottomsection")
+);
+const Footer = React.lazy(() => import("../Footer/Footer"));
+const HeroMulti = React.lazy(() => import("../HeroMulti/HeroMulti"));
+const PriceBlock = React.lazy(() => import("./PriceBlock/PriceBlock"));
 
 function ServicePage() {
   return (
     <div>
       <NavBar />
-      <HeroMulti />
-      <PriceBlock />
-      <Bottomsection />
-      <Footer />
+      <Suspense
+        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
+      >
+        <HeroMulti />
+        <PriceBlock />
+        <Bottomsection />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

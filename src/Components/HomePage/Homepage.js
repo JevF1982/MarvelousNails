@@ -1,16 +1,35 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navigation from "../Navbar/Navbar";
 import HeroSection from "../HomePage/Herosection/Herosection";
-import InfoSection from "../HomePage/InfoSection/InfoSection";
-import VideoPlayer from "../HomePage/VideoPlayer/VideoPlayer";
-import ServiceSection from "../HomePage/ServiceSection/ServiceSection";
-import AboutMeSection from "../HomePage/AboutMeSection/AboutMeSection";
-import ClientSection from "../HomePage/ClientSection/Clientsection";
-import AppointmentSection from "../HomePage/AppointmentSection/AppointmentSection";
-import ImgSection from "../HomePage/ImgSection/ImgSection";
-import BottomSection from "../HomePage/BottomSection/Bottomsection";
-import Footer from "../Footer/Footer";
+import Spinner from "react-bootstrap/Spinner";
+
 import CookieBan from "../Utils/CookieBan";
+
+const InfoSection = React.lazy(() =>
+  import("../HomePage/InfoSection/InfoSection")
+);
+const VideoPlayer = React.lazy(() =>
+  import("../HomePage/VideoPlayer/VideoPlayer")
+);
+const ServiceSection = React.lazy(() =>
+  import("../HomePage/ServiceSection/ServiceSection")
+);
+const AboutMeSection = React.lazy(() =>
+  import("../HomePage/AboutMeSection/AboutMeSection")
+);
+const ClientSection = React.lazy(() =>
+  import("../HomePage/ClientSection/Clientsection")
+);
+const AppointmentSection = React.lazy(() =>
+  import("../HomePage/AppointmentSection/AppointmentSection")
+);
+const ImgSection = React.lazy(() =>
+  import("../HomePage/ImgSection/ImgSection")
+);
+const BottomSection = React.lazy(() =>
+  import("../HomePage/BottomSection/Bottomsection")
+);
+const Footer = React.lazy(() => import("../Footer/Footer"));
 
 function Homepage() {
   return (
@@ -18,15 +37,19 @@ function Homepage() {
       <CookieBan />
       <Navigation />
       <HeroSection />
-      <InfoSection />
-      <VideoPlayer />
-      <ServiceSection />
-      <AboutMeSection />
-      <ClientSection />
-      <AppointmentSection />
-      <ImgSection />
-      <BottomSection />
-      <Footer />
+      <Suspense
+        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
+      >
+        <InfoSection />
+        <VideoPlayer />
+        <ServiceSection />
+        <AboutMeSection />
+        <ClientSection />
+        <AppointmentSection />
+        <ImgSection />
+        <BottomSection />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

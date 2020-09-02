@@ -30,7 +30,7 @@ function Navigation() {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Brand href="#home">
             <img
-              src={require("../static/output-onlinepngtools.png")}
+              src={require("../static/logos/output-onlinepngtools.png")}
               alt="mnlogo"
               className="nav-logo"
             />

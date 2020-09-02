@@ -81,7 +81,7 @@ function AboutMeSection() {
         <div className="aboutme-container">
           <div className="aboutme-img-container">
             <img
-              src={require("../../static/profile-lindsey-removebg-preview.png")}
+              src={require("../../static/profile-img/profile-lindsey-removebg-preview.png")}
               alt="profile-lindsey"
               className="shadowed"
             />
