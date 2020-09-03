@@ -77,7 +77,7 @@ function Bottomsection() {
     const arr = [];
     for (let index = 1; index < 7; index++) {
       arr.push(
-        `https://d1qq0qaiiococ4.cloudfront.net/homepage-mini-lookbook/mini-lookbook-img${index}`
+        `https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-mini-lookbook/mini-lookbook-img${index}`
       );
     }
     setImages(arr);
