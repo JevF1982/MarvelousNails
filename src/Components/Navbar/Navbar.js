@@ -45,6 +45,9 @@ function Navigation() {
               <Nav.Link eventKey={2} href="/services" className="mr-5">
                 Services
               </Nav.Link>
+              <Nav.Link eventKey={2} href="/appointment" className="mr-5">
+                Appointment
+              </Nav.Link>
               <Nav.Link eventKey={2} href="/lookbook" className="mr-5">
                 Lookbook
               </Nav.Link>

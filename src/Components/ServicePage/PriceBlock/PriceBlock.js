@@ -13,6 +13,11 @@ const PriceBlockWrapper = styled.div`
     opacity: 0.7;
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   .img-col {
     padding: 0px !important;
     margin: auto;
@@ -145,7 +150,7 @@ function PriceBlock() {
               <div className="img-container">
                 <h1 className="img-header">Nieuwe Set</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Book Now
+                  <a href="/appointment">...Book Now</a>
                 </button>
                 <img
                   src={require("../../static/nails/nail-img (22).webp")}
@@ -201,7 +206,7 @@ function PriceBlock() {
               <div className="img-container">
                 <h1 className="img-header">Bijwerken</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Book Now
+                  <a href="/appointment">...Book Now</a>
                 </button>
                 <img
                   src={require("../../static/nails/nail-img (18).webp")}
@@ -244,7 +249,7 @@ function PriceBlock() {
               <div className="img-container">
                 <h1 className="img-header">Extras</h1>
                 <button type="button" className="btn btn-secondary hero-btn">
-                  ...Book Now
+                  <a href="/appointment">...Book Now</a>
                 </button>
                 <img
                   src={require("../../static/nails/nail-img (12).webp")}

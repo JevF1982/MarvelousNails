@@ -89,6 +89,11 @@ function Footer() {
               </a>
             </li>
             <li>
+              <a href="/appointment" className="footer-links">
+                Appointment
+              </a>
+            </li>
+            <li>
               <a href="/services" className="footer-links">
                 Services
               </a>

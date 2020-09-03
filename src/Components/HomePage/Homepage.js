@@ -41,40 +41,12 @@ function Homepage() {
         fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
       >
         <InfoSection />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <VideoPlayer />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <ServiceSection />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <AboutMeSection />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <ClientSection />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <AppointmentSection />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <ImgSection />
-      </Suspense>
-      <Suspense
-        fallback={<Spinner animation="border" style={{ marginTop: "200px" }} />}
-      >
         <BottomSection />
         <Footer />
       </Suspense>

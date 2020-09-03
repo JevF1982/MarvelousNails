@@ -84,8 +84,21 @@ function AppointmentSection() {
           <h5 style={{ marginTop: "50px" }}>
             We will get back to you as soon as possible
           </h5>
-          <button type="button" className="btn btn-secondary hero-btn">
-            Book Appointment
+          <button
+            type="button"
+            className="btn btn-secondary hero-btn salonized-booking"
+            data-company="zVag8YaZ1tom4E5FBXPreBNj"
+            data-color="main"
+            data-language="nl"
+            data-size="normal"
+            data-position="right"
+          >
+            <a
+              href="/appointment"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Book Appointment
+            </a>
           </button>
         </div>
       </div>
