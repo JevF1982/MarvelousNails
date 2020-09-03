@@ -40,7 +40,7 @@ const HeroWrapper = styled.section`
   }
 
   .img-car {
-    max-height: 100%;
+    min-height: 300px;
   }
   #caption-wrapper {
     max-height: 700px;
@@ -92,7 +92,7 @@ const HeroWrapper = styled.section`
   }
   @media (max-width: 400px) {
     div.carousel-caption {
-      top: 120px;
+      top: 160px;
     }
     #hero-header {
       font-size: 32px;
