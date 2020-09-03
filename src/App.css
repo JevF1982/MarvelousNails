@@ -30,3 +30,14 @@ ul li {
 .step-header {
   background-color: black !important;
 }
+
+.video-react-poster {
+  max-height: 500px;
+}
+.video-react-video {
+  max-height: 500px;
+}
+
+div.video-react-controls-enabled {
+  padding-top: 500px !important;
+}

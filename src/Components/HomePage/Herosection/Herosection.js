@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styled from "styled-components";
+import { homePageHeroSection } from "../../Utils/ImgDataGlobal";
 
 const HeroWrapper = styled.section`
   #hero-header {
@@ -107,12 +108,6 @@ const HeroWrapper = styled.section`
 `;
 
 function Herosection() {
-  const s3Url = [
-    "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero1",
-    "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero2",
-    "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero3",
-  ];
-
   return (
     <>
       <HeroWrapper>
@@ -127,7 +122,7 @@ function Herosection() {
         </div>
 
         <Carousel>
-          {s3Url.map((pic, index) => (
+          {homePageHeroSection.map((pic, index) => (
             <Carousel.Item key={index}>
               <img
                 className="d-block w-100 img-car"

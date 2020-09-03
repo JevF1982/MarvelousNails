@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
+import { homePageServicesSection } from "../../Utils/ImgDataGlobal";
 
 const ServiceWrapper = styled.div`
   .service-header {
@@ -93,51 +94,17 @@ function ServiceSection() {
         </Container>
         <div className="container-fluid">
           <Row>
-            <Col lg="3" md="6" xs="12" className="img-col">
-              <div className="img-container">
-                <h1 className="img-header">Verlenging</h1>
-                <button type="button" className="btn btn-secondary hero-btn">
-                  <a href="/services"> ...Read More</a>
-                </button>
-                <img
-                  src="https://marvelousnails.s3.eu-central-1.amazonaws.com/Nails/mn6.jpg"
-                  alt="pic1"
-                />
-              </div>
-            </Col>
-            <Col lg="3" md="6" xs="12" className="img-col">
-              <div className="img-container">
-                <h1 className="img-header">Rubber Base</h1>
-                <button type="button" className="btn btn-secondary hero-btn">
-                  <a href="/services"> ...Read More</a>
-                </button>
-                <img
-                  src={require("../../static/nails/nails2.jpg")}
-                  alt="pic1"
-                />
-              </div>
-            </Col>
-            <Col lg="3" md="6" xs="12" className="img-col">
-              <div className="img-container">
-                <h1 className="img-header">French</h1>
-                <button type="button" className="btn btn-secondary hero-btn">
-                  <a href="/services"> ...Read More</a>
-                </button>
-                <img
-                  src={require("../../static/nails/nails4.jpg")}
-                  alt="pic1"
-                />
-              </div>
-            </Col>
-            <Col lg="3" md="6" xs="12" className="img-col">
-              <div className="img-container">
-                <h1 className="img-header">Babyboom</h1>
-                <button type="button" className="btn btn-secondary hero-btn">
-                  <a href="/services"> ...Read More</a>
-                </button>
-                <img src={require("../../static/nails/mn6.jpg")} alt="pic1" />
-              </div>
-            </Col>
+            {homePageServicesSection.map((data, index) => (
+              <Col lg="3" md="6" xs="12" className="img-col" key={index}>
+                <div className="img-container">
+                  <h1 className="img-header">{data.header}</h1>
+                  <button type="button" className="btn btn-secondary hero-btn">
+                    <a href="/services"> ...Read More</a>
+                  </button>
+                  <img src={data.url} alt={`pic-${index}`} />
+                </div>
+              </Col>
+            ))}
           </Row>
         </div>
       </div>
