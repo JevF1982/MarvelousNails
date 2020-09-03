@@ -28,7 +28,7 @@ function PhotoGallery() {
         <Row>
           {img.map((src, index) => (
             <Col lg="4" md="6" sm="12" key={index}>
-              <img src={src.src} alt={`img-${index}`} />
+              <img src={src} alt={`img-${index}`} />
             </Col>
           ))}
         </Row>
