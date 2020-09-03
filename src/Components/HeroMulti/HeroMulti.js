@@ -11,6 +11,15 @@ const HeroMultiWrapper = styled.div`
     font-size: 90px;
     text-transform: uppercase;
   }
+
+  .jumbotron {
+    background-image: url("https://d1qq0qaiiococ4.cloudfront.net/MultiHeader/heroMultiImg");
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-size: cover;
+    height: 250px;
+  }
+
   @media (max-width: 990px) {
     .jumbo {
       display: none;
