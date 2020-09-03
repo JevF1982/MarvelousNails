@@ -34,5 +34,3 @@ export const homePageServicesSection = [
       "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-services-section/ServiceImg4",
   },
 ];
-
-export const homePageImgRowSection = [];

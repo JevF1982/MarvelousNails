@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
@@ -41,35 +40,26 @@ const ImgWrapper = styled.div`
 `;
 
 function ImgSection() {
-  const images = [
-    {
-      img: require("../../static/nails/nail-img (1).jpg"),
-    },
-    {
-      img: require("../../static/nails/nail-img (2).jpg"),
-    },
-    {
-      img: require("../../static/nails/nail-img (3).jpg"),
-    },
-    {
-      img: require("../../static/nails/nail-img (4).jpg"),
-    },
-    {
-      img: require("../../static/nails/nail-img (5).jpg"),
-    },
-    {
-      img: require("../../static/nails/nail-img (6).jpg"),
-    },
-  ];
+  const [Images, setImages] = useState([]);
+
+  useEffect(() => {
+    const arr = [];
+    for (let index = 1; index < 7; index++) {
+      arr.push(
+        `https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-bottom-images-section/img${index}`
+      );
+    }
+    setImages(arr);
+  }, []);
 
   return (
     <ImgWrapper>
       <div className="container-fluid">
         <Row>
-          {images.map((img, index) => (
+          {Images.map((img, index) => (
             <Col lg="2" md="6" xs="12" className="img-col" key={index}>
               <div className="img-container">
-                <img src={img.img} alt={`pic-${index}`} />
+                <img src={img} alt={`pic-${index}`} />
               </div>
             </Col>
           ))}
