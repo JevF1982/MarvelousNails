@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -71,6 +71,18 @@ const BottomWrapper = styled.div`
 `;
 
 function Bottomsection() {
+  const [Images, setImages] = useState([]);
+
+  useEffect(() => {
+    const arr = [];
+    for (let index = 1; index < 7; index++) {
+      arr.push(
+        `https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-mini-lookbook/mini-lookbook-img${index}`
+      );
+    }
+    setImages(arr);
+  }, []);
+
   return (
     <BottomWrapper>
       <div className="main-container">
@@ -174,38 +186,32 @@ function Bottomsection() {
               </div>
               <div className="tile-container">
                 <div className="tile-row">
-                  <img
-                    src={require("../../static/nails/nail-img (1).jpg")}
-                    alt="img-1"
-                    className="img-tile"
-                  />
-                  <img
-                    src={require("../../static/nails/nail-img (2).jpg")}
-                    alt="img-2"
-                    className="img-tile"
-                  />
-                  <img
-                    src={require("../../static/nails/nail-img (5).jpg")}
-                    alt="img-5"
-                    className="img-tile"
-                  />
+                  {Images.map((url, index) => {
+                    if (index <= 2) {
+                      return (
+                        <img
+                          src={url}
+                          alt="img-1"
+                          className="img-tile"
+                          key={index}
+                        />
+                      );
+                    }
+                  })}
                 </div>
                 <div className="tile-row">
-                  <img
-                    src={require("../../static/nails/nail-img (3).jpg")}
-                    alt="img-3"
-                    className="img-tile"
-                  />
-                  <img
-                    src={require("../../static/nails/nail-img (4).jpg")}
-                    alt="img-4"
-                    className="img-tile"
-                  />
-                  <img
-                    src={require("../../static/nails/nail-img (6).jpg")}
-                    alt="img-6"
-                    className="img-tile"
-                  />
+                  {Images.map((url, index) => {
+                    if (index > 2) {
+                      return (
+                        <img
+                          src={url}
+                          alt="img-1"
+                          className="img-tile"
+                          key={index}
+                        />
+                      );
+                    }
+                  })}
                 </div>
               </div>
             </Col>
