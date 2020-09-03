@@ -19,7 +19,7 @@ const HeroWrapper = styled.section`
   .carousel-inner {
     max-height: 700px;
     background-size: cover !important;
-    background-position: center center;
+    background-position: center;
   }
 
   .carousel-inner::after {
@@ -107,10 +107,10 @@ const HeroWrapper = styled.section`
 `;
 
 function Herosection() {
-  const pics = [
-    "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+  const s3Url = [
+    "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero1",
+    "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero2",
+    "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero3",
   ];
 
   return (
@@ -127,7 +127,7 @@ function Herosection() {
         </div>
 
         <Carousel>
-          {pics.map((pic, index) => (
+          {s3Url.map((pic, index) => (
             <Carousel.Item key={index}>
               <img
                 className="d-block w-100 img-car"

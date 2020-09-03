@@ -100,7 +100,7 @@ function ServiceSection() {
                   <a href="/services"> ...Read More</a>
                 </button>
                 <img
-                  src={require("../../static/nails/nail-img (12).jpg")}
+                  src="https://marvelousnails.s3.eu-central-1.amazonaws.com/Nails/mn6.jpg"
                   alt="pic1"
                 />
               </div>
