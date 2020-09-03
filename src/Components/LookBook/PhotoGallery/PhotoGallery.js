@@ -8,7 +8,7 @@ import styled from "styled-components";
 const PhotoGalleryWrapper = styled.div`
   img {
     height: 310px;
-    min-width: 310px;
+    max-width: 310px;
     margin-bottom: 20px;
   }
 
