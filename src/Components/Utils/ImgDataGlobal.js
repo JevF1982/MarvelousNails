@@ -8,9 +8,9 @@ export const videoSectionData = {
 };
 
 export const homePageHeroSection = [
-  "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero1",
-  "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero2",
-  "https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-herosection/homepageHero3",
+  "https://d2001n9h2t2ysf.cloudfront.net/homepage-herosection/homepageHero1",
+  "https://d2001n9h2t2ysf.cloudfront.net/homepage-herosection/homepageHero2",
+  "https://d2001n9h2t2ysf.cloudfront.net/homepage-herosection/homepageHero3",
 ];
 export const homePageServicesSection = [
   {
