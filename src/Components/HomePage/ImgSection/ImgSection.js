@@ -46,7 +46,7 @@ function ImgSection() {
     const arr = [];
     for (let index = 1; index < 7; index++) {
       arr.push(
-        `https://marvelousnails.s3.eu-central-1.amazonaws.com/homepage-bottom-images-section/img${index}`
+        `https://d1qq0qaiiococ4.cloudfront.net/homepage-bottom-images-section/img${index}`
       );
     }
     setImages(arr);
