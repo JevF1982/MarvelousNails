@@ -25,6 +25,8 @@ ul li {
 
 .video-react-poster {
   max-height: 500px;
+
+  background-size: cover !important;
 }
 .video-react-video {
   max-height: 500px;

@@ -1,36 +1,30 @@
 //////////////////////////////////////HOMEPAGE////////////////////////////////////////////////
-
+const mainUrl = "marvelousnails.s3.eu-central-1.amazonaws.com";
 export const videoSectionData = {
-  img:
-    "https://d1qq0qaiiococ4.cloudfront.net/homepage/video-section/videoSectionImg",
-  mov:
-    "https://d1qq0qaiiococ4.cloudfront.net/homepage/video-section/videoSectionMovie.MP4",
+  img: `https://${mainUrl}/homepage/video-section/videoSectionImg`,
+  mov: `https://${mainUrl}/homepage/video-section/videoSectionMovie.MP4`,
 };
 
 export const homePageHeroSection = [
-  "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-herosection/homepageHero1",
-  "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-herosection/homepageHero2",
-  "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-herosection/homepageHero3",
+  `https://${mainUrl}/homepage/homepage-herosection/homepageHero1`,
+  `https://${mainUrl}/homepage/homepage-herosection/homepageHero2`,
+  `https://${mainUrl}/homepage/homepage-herosection/homepageHero3`,
 ];
 export const homePageServicesSection = [
   {
     header: "verlenging",
-    url:
-      "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-services-section/ServiceImg1",
+    url: `https://${mainUrl}/homepage/homepage-services-section/ServiceImg1`,
   },
   {
     header: "rubber base",
-    url:
-      "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-services-section/ServiceImg2",
+    url: `https://${mainUrl}/homepage/homepage-services-section/ServiceImg2`,
   },
   {
     header: "French",
-    url:
-      "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-services-section/ServiceImg3",
+    url: `https://${mainUrl}/homepage/homepage-services-section/ServiceImg3`,
   },
   {
     header: "babyboom",
-    url:
-      "https://d1qq0qaiiococ4.cloudfront.net/homepage/homepage-services-section/ServiceImg4",
+    url: `https://${mainUrl}/homepage/homepage-services-section/ServiceImg4`,
   },
 ];

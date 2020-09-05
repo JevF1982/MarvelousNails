@@ -10,7 +10,7 @@ const PriceBlockWrapper = styled.div`
     height: 600px;
     width: 100%;
 
-    opacity: 0.7;
+    opacity: 0.9;
   }
 
   a {
@@ -44,6 +44,8 @@ const PriceBlockWrapper = styled.div`
     padding: 5px;
     justify-content: center;
     z-index: 10;
+    opacity: 0.8;
+    border-radius: 10px;
     color: white;
   }
 
@@ -103,6 +105,8 @@ const PriceBlockWrapper = styled.div`
 `;
 
 function PriceBlock() {
+  const mainUrl = "marvelousnails.s3.eu-central-1.amazonaws.com";
+
   return (
     <PriceBlockWrapper>
       <Container style={{ marginTop: "90px" }}>
@@ -153,7 +157,7 @@ function PriceBlock() {
                   <a href="/appointment">...Book Now</a>
                 </button>
                 <img
-                  src="https://d1qq0qaiiococ4.cloudfront.net/servicepage/serviceimg1"
+                  src={`https://${mainUrl}/servicepage/serviceimg1`}
                   alt="pic1"
                 />
               </div>
@@ -209,7 +213,7 @@ function PriceBlock() {
                   <a href="/appointment">...Book Now</a>
                 </button>
                 <img
-                  src="https://d1qq0qaiiococ4.cloudfront.net/servicepage/serviceimg2"
+                  src={`https://${mainUrl}/servicepage/serviceimg2`}
                   alt="pic2"
                 />
               </div>
@@ -252,7 +256,7 @@ function PriceBlock() {
                   <a href="/appointment">...Book Now</a>
                 </button>
                 <img
-                  src="https://d1qq0qaiiococ4.cloudfront.net/servicepage/serviceimg3"
+                  src={`https://${mainUrl}/servicepage/serviceimg3`}
                   alt="pic3"
                 />
               </div>

@@ -36,6 +36,7 @@ const Wrapper = styled.div`
   .right-col {
     margin-top: 120px;
     justify-content: flex-start;
+    margin-bottom: 50px;
   }
   p {
     margin-bottom: 60px;
@@ -72,7 +73,7 @@ function InfoSection() {
         <Row>
           <Col className="left-col">
             <h1>
-              Welcome to Marvelous Nails <hr id="underline" />
+              Welcome to Marvelous Nails nagelstudio <hr id="underline" />
             </h1>
           </Col>
           <Col className="right-col">
@@ -88,6 +89,16 @@ function InfoSection() {
                 ... Read More
               </button>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <a href="https://shop.madamepolkadots.be/">
+              <img
+                src={require("../../static/logos/Logo Abalico producten.png")}
+                alt="logo-abalico"
+              />
+            </a>
           </Col>
         </Row>
       </Container>

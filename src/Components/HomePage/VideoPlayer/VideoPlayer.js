@@ -13,6 +13,7 @@ function VideoPlayer() {
         display: "flex",
         justifyContent: "center",
         width: "100%",
+        marginTop: "120px",
       }}
     >
       <div

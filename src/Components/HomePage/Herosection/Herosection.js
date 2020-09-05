@@ -62,6 +62,8 @@ const HeroWrapper = styled.section`
   .hero-btn {
     background-color: black;
     font-size: 20px;
+    opacity: 0.6;
+    border: none;
   }
   @media (max-width: 950px) {
     #hero-header {
@@ -114,9 +116,9 @@ function Herosection() {
         <div id="caption-wrapper">
           <Carousel.Caption>
             <h1 id="hero-header">Marvelous Nails</h1>
-            <p id="hero-paragraph">Stylish nails for every occasion</p>
+            <p id="hero-paragraph">For marvelous people</p>
             <button type="button" className="btn btn-secondary hero-btn">
-              <a href="/contact"> ... Contact me</a>
+              <a href="/apointment">...Book Now</a>
             </button>
           </Carousel.Caption>
         </div>

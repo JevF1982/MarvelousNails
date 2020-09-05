@@ -165,7 +165,7 @@ function Bottomsection() {
                     className="contact-icons"
                   />
                   <span className="contact-text">
-                    Mon-Fri 9:00 AM - 8:00 PM{" "}
+                    9:30 - 20:30 woensdag en zondag gesloten
                   </span>
                 </div>
                 <div className="contact-row">

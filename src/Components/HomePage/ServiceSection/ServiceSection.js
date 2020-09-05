@@ -15,6 +15,7 @@ const ServiceWrapper = styled.div`
   a {
     color: white;
     text-decoration: none;
+    z-index:1000;
   }
 
   #underline {
@@ -61,8 +62,9 @@ const ServiceWrapper = styled.div`
     font-size: 17px;
     top: 370px;
     left: 90px;
-
+    opacity: 0.6;
     font-weight: 400;
+    border: none;
     z-index: 10;
   }
 

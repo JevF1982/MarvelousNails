@@ -14,6 +14,10 @@ const NavWrapper = styled.div`
 
   .nav-link {
     color: white !important;
+    /* font-family: "TheLightFont";
+    src: url(/static/fonts/TheLightFont.ttf);
+    font-weight: 400;
+    text-transform: uppercase; */
   }
 
   @media (max-width: 400px) {

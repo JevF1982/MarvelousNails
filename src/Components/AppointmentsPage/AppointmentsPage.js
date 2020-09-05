@@ -12,6 +12,7 @@ function AppointmentsPage() {
       <div>
         <iframe
           src="https://marvelous-nails-1.salonized.com/bookings/new?layout=embed"
+          title="appointments"
           style={{
             width: "100%",
             maxWidth: " 700px",

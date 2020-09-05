@@ -6,7 +6,8 @@ const AppointmentWrapper = styled.div`
     height: 600px;
     width: 100%;
     display: flex;
-    background-color: #e0deda;
+    /* background-color: #e0deda; */
+    background-color: #f4f5f7;
     margin: 110px 0 0 0;
     position: relative;
   }
@@ -73,8 +74,9 @@ function AppointmentSection() {
       <div className="main-container">
         <div className="img-container">
           <img
-            src={require("../../static/appointmentbg.png")}
+            src={require("../../static/misc/flowers (4).png")}
             alt="appointmentbg"
+            style={{ marginLeft: "200px" }}
           />
         </div>
         <div className="text-container">
