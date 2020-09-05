@@ -110,7 +110,7 @@ const HeroWrapper = styled.section`
       font-size: 12px;
     }
     .img-car {
-      height: 400px;
+      height: 300px;
     }
   }
 `;
