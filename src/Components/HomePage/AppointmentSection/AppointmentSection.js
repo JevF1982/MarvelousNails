@@ -72,7 +72,7 @@ const AppointmentWrapper = styled.div`
   }
   @media (max-width: 400px) {
     .flower-png {
-      margin-left: 295px;
+      margin-left: 290px;
     }
   }
 `;
