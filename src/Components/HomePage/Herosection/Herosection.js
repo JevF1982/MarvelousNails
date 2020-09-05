@@ -41,7 +41,7 @@ const HeroWrapper = styled.section`
   }
 
   .img-car {
-    height: 400px;
+    height: 700px;
   }
   #caption-wrapper {
     max-height: 700px;
@@ -92,6 +92,9 @@ const HeroWrapper = styled.section`
     #hero-paragraph {
       margin-bottom: 10px;
     }
+    .img-car {
+      height: 400px;
+    }
   }
   @media (max-width: 400px) {
     div.carousel-caption {
@@ -105,6 +108,9 @@ const HeroWrapper = styled.section`
     }
     .hero-btn {
       font-size: 12px;
+    }
+    .img-car {
+      height: 400px;
     }
   }
 `;

@@ -40,6 +40,10 @@ const AppointmentWrapper = styled.div`
     margin: 20px 0 0 350px;
   }
 
+  .flower-png {
+    margin-left: 200px;
+  }
+
   @media (max-width: 950px) {
     .main-container {
       flex-direction: column;
@@ -66,6 +70,11 @@ const AppointmentWrapper = styled.div`
       margin: 20px 0 0 30px;
     }
   }
+  @media (max-width: 400px) {
+    .flower-png {
+      margin-left: 295px;
+    }
+  }
 `;
 
 function AppointmentSection() {
@@ -76,7 +85,7 @@ function AppointmentSection() {
           <img
             src={require("../../static/misc/flowers (4).png")}
             alt="appointmentbg"
-            style={{ marginLeft: "200px" }}
+            className="flower-png"
           />
         </div>
         <div className="text-container">
