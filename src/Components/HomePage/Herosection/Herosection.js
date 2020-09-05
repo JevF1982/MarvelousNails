@@ -41,7 +41,7 @@ const HeroWrapper = styled.section`
   }
 
   .img-car {
-    min-height: 300px;
+    height: 400px;
   }
   #caption-wrapper {
     max-height: 700px;
