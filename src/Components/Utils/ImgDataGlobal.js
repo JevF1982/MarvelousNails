@@ -1,5 +1,5 @@
 //////////////////////////////////////HOMEPAGE////////////////////////////////////////////////
-const mainUrl = "marvelousnails.s3.eu-central-1.amazonaws.com";
+const mainUrl = "d1qq0qaiiococ4.cloudfront.net";
 export const videoSectionData = {
   img: `https://${mainUrl}/homepage/video-section/videoSectionImg`,
   mov: `https://${mainUrl}/homepage/video-section/videoSectionMovie.MP4`,
