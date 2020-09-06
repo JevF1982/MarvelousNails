@@ -63,7 +63,7 @@ function FormSection() {
         </HeaderMain>
       </div>
       <Container>
-        <Form id="main-form">
+        <Form id="main-form" data-netlify-recaptcha="true" data-netlify="true">
           <Form.Row>
             <Form.Group
               as={Col}

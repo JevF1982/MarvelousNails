@@ -79,7 +79,7 @@ const PriceBlockWrapper = styled.div`
     font-size: 17px;
     top: 270px;
     left: 90px;
-
+    opacity: 0.8;
     font-weight: 400;
     z-index: 10;
   }
