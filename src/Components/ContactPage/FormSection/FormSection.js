@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import emailjs from "emailjs-com";
+import Alert from "react-bootstrap/Alert";
 
 function FormSection() {
   const [FormValues, setFormValues] = useState({
@@ -14,6 +15,7 @@ function FormSection() {
     message: "",
     isSent: false,
     isNotSent: false,
+    fieldCheck: false,
   });
 
   const onSubmit = (e) => {
@@ -22,30 +24,64 @@ function FormSection() {
     const template_id = "template_DRR7N90x";
     const user_id = process.env.REACT_APP_USERID;
 
-    emailjs.send(service_id, template_id, FormValues, user_id).then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        if (response.status === 200) {
-          setFormValues({
-            isSent: true,
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
+    if (
+      FormValues.name === "" ||
+      FormValues.email === "" ||
+      FormValues.phone === "" ||
+      FormValues.message === ""
+    ) {
+      setFormValues({ ...FormValues, fieldCheck: true });
+      setTimeout(() => {
+        setFormValues({ ...FormValues, fieldCheck: false });
+      }, 3000);
+    } else {
+      emailjs.send(service_id, template_id, FormValues, user_id).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          if (response.status === 200) {
+            setFormValues({
+              isSent: true,
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+              fieldCheck: false,
+            });
+          }
+        },
+        (err) => {
+          setFormValues({ ...FormValues, isNotSent: true });
+          console.log("FAILED...", err);
         }
-      },
-      (err) => {
-        setFormValues({
-          isNotSent: true,
-        });
-        console.log("FAILED...", err);
-      }
-    );
+      );
+    }
   };
 
   const handleChange = (e) => {
     setFormValues({ ...FormValues, [e.target.name]: e.target.value });
+    console.log(FormValues);
+  };
+
+  const confirmationText = () => {
+    if (FormValues.isSent) {
+      setTimeout(function () {
+        setFormValues({ ...FormValues, isSent: false });
+      }, 3000);
+      return (
+        <Alert style={{ marginLeft: "20px" }} variant="success">
+          Message Sent
+        </Alert>
+      );
+    } else if (FormValues.isNotSent) {
+      setTimeout(function () {
+        setFormValues({ ...FormValues, isNotSent: false });
+      }, 3000);
+      return (
+        <Alert style={{ marginLeft: "20px" }} variant="danger">
+          Failed to send message
+        </Alert>
+      );
+    }
   };
 
   return (
@@ -62,6 +98,12 @@ function FormSection() {
           <Hr style={{ marginLeft: "150px" }} />
         </HeaderMain>
       </div>
+      {FormValues.fieldCheck && (
+        <Alert variant="info" style={{ margin: "10px 0 10px 0" }}>
+          {" "}
+          Please fill in all fields
+        </Alert>
+      )}
       <Container>
         <Form id="main-form" data-netlify-recaptcha="true" data-netlify="true">
           <Form.Row>
@@ -160,6 +202,7 @@ function FormSection() {
             >
               Submit
             </MainButton>
+            {confirmationText()}
           </div>
         </Form>
       </Container>
