@@ -83,7 +83,7 @@ function AppointmentSection() {
       <div className="main-container">
         <div className="img-container">
           <img
-            src={require("../../static/misc/flowers (4).png")}
+            src={require("../../static/misc/flowers (2).png")}
             alt="appointmentbg"
             className="flower-png"
           />

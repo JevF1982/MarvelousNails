@@ -59,7 +59,6 @@ function FormSection() {
 
   const handleChange = (e) => {
     setFormValues({ ...FormValues, [e.target.name]: e.target.value });
-    console.log(FormValues);
   };
 
   const confirmationText = () => {
